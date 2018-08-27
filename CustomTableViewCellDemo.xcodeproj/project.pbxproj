@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		9BF3458D2133DE87002245E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF3458B2133DE87002245E7 /* Main.storyboard */; };
 		9BF3458F2133DE88002245E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BF3458E2133DE88002245E7 /* Assets.xcassets */; };
 		9BF345922133DE88002245E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BF345902133DE88002245E7 /* LaunchScreen.storyboard */; };
+		9BF3459A2133E036002245E7 /* CustomTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BF345992133E036002245E7 /* CustomTableViewCell.swift */; };
+		9BF345A02133E7CB002245E7 /* CustomTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9BF3459F2133E7CB002245E7 /* CustomTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		9BF3458E2133DE88002245E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BF345912133DE88002245E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BF345932133DE88002245E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BF345992133E036002245E7 /* CustomTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableViewCell.swift; sourceTree = "<group>"; };
+		9BF3459F2133E7CB002245E7 /* CustomTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +59,8 @@
 			isa = PBXGroup;
 			children = (
 				9BF345872133DE87002245E7 /* AppDelegate.swift */,
+				9BF345992133E036002245E7 /* CustomTableViewCell.swift */,
+				9BF3459F2133E7CB002245E7 /* CustomTableViewCell.xib */,
 				9BF345892133DE87002245E7 /* ViewController.swift */,
 				9BF3458B2133DE87002245E7 /* Main.storyboard */,
 				9BF3458E2133DE88002245E7 /* Assets.xcassets */,
@@ -96,11 +102,12 @@
 				TargetAttributes = {
 					9BF345832133DE87002245E7 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = 9BF3457F2133DE87002245E7 /* Build configuration list for PBXProject "CustomTableViewCellDemo" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -124,6 +131,7 @@
 			files = (
 				9BF345922133DE88002245E7 /* LaunchScreen.storyboard in Resources */,
 				9BF3458F2133DE88002245E7 /* Assets.xcassets in Resources */,
+				9BF345A02133E7CB002245E7 /* CustomTableViewCell.xib in Resources */,
 				9BF3458D2133DE87002245E7 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BF3459A2133E036002245E7 /* CustomTableViewCell.swift in Sources */,
 				9BF3458A2133DE87002245E7 /* ViewController.swift in Sources */,
 				9BF345882133DE87002245E7 /* AppDelegate.swift in Sources */,
 			);
@@ -270,8 +279,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -282,10 +290,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CustomTableViewCellDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = be.underside.CustomTableViewCellDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -299,10 +304,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = CustomTableViewCellDemo/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = be.underside.CustomTableViewCellDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
